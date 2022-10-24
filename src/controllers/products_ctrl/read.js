@@ -32,26 +32,10 @@ const read = async function(req, res){
             message:resmsg
         }).code(rescode); 
 
-        // await model.fruits.findByPk(id)
-        // .then((result)=>{
-        //     if(result.length > 0){  
-        //         rescode = 200; 
-        //         resstatus =  'Get Method Fruits';
-        //         resmsg = result;
-        //     }else{                      
-        //         rescode = 200; 
-        //         resstatus =  'Data Empty';
-        //         resmsg = result;
-        //     }
-        // })
     } catch(error){
         console.log(error);
         return false;
     }    
-    // return res.response({
-    //     status: resstatus,
-    //     message:resmsg
-    // }).code(rescode);
 }
 
 module.exports = read;

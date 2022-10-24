@@ -8,10 +8,10 @@ module.exports = [
         method : 'GET',
         path : '/produk/{id}',
         handler : controllers.products.read,
-    // },{
-    //     method : 'POST',
-    //     path : '/produk',
-    //     handler : controllers.products.add,
+    },{
+        method : 'POST',
+        path : '/produk',
+        handler : controllers.products.add,
     // },{
     //     method : 'PUT',
     //     path : '/produk/{id}',
