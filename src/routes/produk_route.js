@@ -12,10 +12,10 @@ module.exports = [
         method : 'POST',
         path : '/produk',
         handler : controllers.products.add,
-    // },{
-    //     method : 'PUT',
-    //     path : '/produk/{id}',
-    //     handler : controllers.products.edit,
+    },{
+        method : 'PUT',
+        path : '/produk/{id}',
+        handler : controllers.products.edit,
     },{
         method : 'DELETE',
         path : '/produk/{id}',
